@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Golden Olive - Restaurant Digital Menu</title>
+</head>
+<body>
+
+    <!-- Requirement 1: Restaurant name, introduction paragraph, and relevant restaurant image -->
+    <header>
+        <h1>The Golden Olive</h1>
+        <p>Welcome to The Golden Olive, where we bring authentic Mediterranean flavors straight to your table. Every dish is crafted with fresh, locally sourced ingredients and a passion for exceptional dining. Explore our digital menu below to plan your perfect meal.</p>
+        <img src="https://unsplash.com" alt="The Golden Olive dining room atmosphere" width="600">
+    </header>
+
+    <hr>
+
+    <main>
+        <!-- Requirement 5: <dl> for terms such as Vegan, Chef's Special, Gluten-Free, Bestseller and Combo -->
+        <section>
+            <h2>Menu Legend & Dietary Guide</h2>
+            <dl>
+                <dt>Vegan (V)</dt>
+                <dd>Contains absolutely no animal products or by-products.</dd>
+                <dt>Chef's Special (CS)</dt>
+                <dd>A signature dish uniquely crafted by our head chef.</dd>
+                <dt>Gluten-Free (GF)</dt>
+                <dd>Prepared completely without ingredients containing gluten.</dd>
+                <dt>Bestseller (B)</dt>
+                <dd>One of our most popular and highly rated guest favorites.</dd>
+                <dt>Combo (C)</dt>
+                <dd>A bundled meal deal that includes a main, side, and drink.</dd>
+            </dl>
+        </section>
+
+        <hr>
+
+        <!-- Requirement 2 & 3: Sections for Starters, Main Course, Desserts, Beverages using <ul> -->
+        <section>
+            <h2>Our Menu Categories</h2>
+
+            <h3>Starters</h3>
+            <ul>
+                <!-- Requirement 10: <strong> for signature dishes and <mark> for special offers -->
+                <li><strong>Garlic Herb Focaccia</strong> (V) - House-baked flatbread with rosemary and olive oil.</li>
+                <li>Stuffed Grape Leaves (GF) - Rice, fresh herbs, and lemon zest wrapped in tender vine leaves.</li>
+            </ul>
+
+            <h3>Main Course</h3>
+            <ul>
+                <li><strong>Mediterranean Grilled Salmon</strong> (GF, CS) - Served with wild rice and asparagus.</li>
+                <li>Spaghetti Aglio e Olio (V) - Garlic, olive oil, chili flakes, and fresh parsley.</li>
+            </ul>
+
+            <h3>Desserts</h3>
+            <ul>
+                <li>Classic Tiramisu (B) - Espresso-soaked ladyfingers layered with rich mascarpone.</li>
+                <li><mark>Special Offer: Buy One Get One 50% Off</mark> - Warm Chocolate Lava Cake served with vanilla bean gelato.</li>
+            </ul>
+
+            <h3>Beverages</h3>
+            <ul>
+                <li>Fresh Mint Lemonade - Tart lemon juice sweetened with pure cane sugar and fresh mint leaves.</li>
+                <li>Iced Americano - Rich espresso shots served over ice with chilled water.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Requirement 4: <ol> for a genuinely sequential Chef's Recommended Dining Experience -->
+        <section>
+            <h2>Chef's Recommended Dining Experience</h2>
+            <p>For the ultimate culinary journey, follow this meticulously curated sequence of dishes:</p>
+            <ol>
+                <li>Begin your palate cleansing with the light and zesty <strong>Stuffed Grape Leaves</strong>.</li>
+                <li>Transition into your main course with our masterpiece, the <strong>Mediterranean Grilled Salmon</strong>.</li>
+                <li>Conclude your evening with the sweet, decadent layers of our <strong>Classic Tiramisu</strong>.</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <!-- Requirement 6, 7, 8, 9: Detailed pricing table with at least 8 items, caption, and rowspan/colspan -->
+        <section>
+            <h2>Menu Matrix & Pricing</h2>
+            <table border="1">
+                <caption>Comprehensive Pricing and Availability Guide</caption>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Category</th>
+                        <th>Size</th>
+                        <th>Price</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Garlic Herb Focaccia</td>
+                        <td rowspan="2">Starters</td>
+                        <td>Standard</td>
+                        <td>$8.50</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>Stuffed Grape Leaves</td>
+                        <td>6 Pieces</td>
+                        <td>$10.00</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>Mediterranean Grilled Salmon</td>
+                        <td rowspan="2">Main Course</td>
+                        <td>Full Dinner</td>
+                        <td>$26.00</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>Spaghetti Aglio e Olio</td>
+                        <td>Regular</td>
+                        <td>$16.50</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>Classic Tiramisu</td>
+                        <td rowspan="2">Desserts</td>
+                        <td>Slice</td>
+                        <td>$9.00</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>Warm Chocolate Lava Cake</td>
+                        <td>Individual</td>
+                        <td>$11.00</td>
+                        <td>Limited Quantities</td>
+                    </tr>
+                    <tr>
+                        <td>Fresh Mint Lemonade</td>
+                        <td rowspan="2">Beverages</td>
+                        <td>16 oz</td>
+                        <td>$4.50</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>Iced Americano</td>
+                        <td>12 oz</td>
+                        <td>$4.00</td>
+                        <td>Available</td>
+                    </tr>
+                    <!-- Demonstrating colspan to show a combo package pricing update -->
+                    <tr>
+                        <td><strong>The Med-Grand Combo Package</strong></td>
+                        <td colspan="2">Includes 1 Starter, 1 Main, 1 Dessert, and 1 Beverage</td>
+                        <td>$42.00</td>
+                        <td>Available Dinner Only</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Requirement 11: At least three food images, at least one clickable -->
+        <section>
+            <h2>Featured Culinary Gallery</h2>
+            <p>Click on the Salmon image to view its full preparation details and nutritional metrics!</p>
+            
+            <!-- Image 1: Clickable Link Wrapper -->
+            <a href="https://unsplash.com" target="_blank">
+                <img src="https://unsplash.com" alt="Click to view full recipe - Mediterranean Grilled Salmon" width="300">
+            </a>
+
+            <!-- Image 2 -->
+            <img src="https://unsplash.com" alt="Warm Chocolate Lava Cake with vanilla gelato" width="300">
+
+            <!-- Image 3 -->
+            <img src="https://unsplash.com" alt="Fresh Mint Lemonade garnished with fresh citrus slices" width="300">
+        </section>
+
+        <hr>
+
+        <!-- Requirement 13: <blockquote> for a short customer quote -->
+        <section>
+            <h2>Guest Testimonials</h2>
+            <blockquote cite="https://example.com">
+                "The Mediterranean Grilled Salmon at The Golden Olive is hands down the best seafood dish I have ever had. The flavors are bright, and the atmosphere feels like a trip straight to Greece!"
+                <br>
+                — <em>Eleanor R., Food Critic</em>
+            </blockquote>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- Requirement 12: Location/contact and reservation links -->
+    <footer>
+        <h2>Connect With Us</h2>
+        <p><strong>Our Address:</strong> 456 Olive Tree Lane, Culinary District, CA 90210</p>
+        <p><strong>Phone:</strong> (555) 123-4567 | <strong>Email:</strong> info@thegoldenolive.com</p>
+        <p>
+            <a href="https://google.com" target="_blank">Find Us on Google Maps</a> | 
+            <a href="mailto:reservations@thegoldenolive.com">Email for Private Events</a> |
+            <a href="https://example.com"><strong>Book Your Table Reservation Online</strong></a>
+        </p>
+    </footer>
+
+</body>
+</html>
