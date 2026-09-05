@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .inline-label {
+            display: inline;
+            font-weight: normal;
+            margin-right: 15px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"],
+        input[type="date"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+        .buttons {
+            text-align: center;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #0056b3;
+            color: white;
+        }
+        input[type="reset"] {
+            background-color: #6c757d;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Requirement 1 & 16: Heading, introductory paragraph, image, and link -->
+    <header>
+        <img src="https://placeholder.com" alt="College Logo" style="float: right; margin-bottom: 10px;">
+        <h1>University Online Admission Portal</h1>
+        <p>Welcome to the official digital admission application form. Please fill out all fields accurately to apply for your preferred academic program. If you need assistance, please read our <a href="#guidelines" target="_blank">Application Guidelines</a> before starting.</p>
+    </header>
+
+    <!-- Main Admission Form -->
+    <form action="/submit-admission" method="POST" enctype="multipart/form-data">
+        
+        <!-- Requirement 2, 3, 8 & 9: Personal Information -->
+        <fieldset>
+            <legend>Personal Details</legend>
+            
+            <div class="form-group">
+                <!-- Requirement 15: Correctly associated label via 'for' attribute -->
+                <label prejudices for="full-name">Full Name *</label>
+                <input type="text" id="full-name" name="fullName" minlength="3" maxlength="50" required placeholder="John Doe">
+            </div>
+
+            <div class="form-group">
+                <!-- Requirement 9: Date field with sensible historical constraints for college entrants -->
+                <label for="dob">Date of Birth *</label>
+                <input type="date" id="dob" name="dateOfBirth" min="1950-01-01" max="2012-12-31" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="emailAddress" required placeholder="example@domain.com">
+            </div>
+
+            <div class="form-group">
+                <!-- Requirement 7: Pattern validation attribute used for 10-digit mobile number -->
+                <label for="mobile">Mobile Number *</label>
+                <input type="tel" id="mobile" name="mobileNumber" pattern="[0-9]{10}" placeholder="10-digit mobile number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pin">Application PIN / Password *</label>
+                <input type="password" id="pin" name="applicationPin" minlength="6" maxlength="12" required placeholder="6-12 characters">
+            </div>
+
+            <!-- Requirement 5: Single-choice field (Radio Buttons) for Gender -->
+            <div class="form-group">
+                <label>Gender *</label>
+                <input type="radio" id="gender-male" name="gender" value="male" required>
+                <label for="gender-male" class="inline-label">Male</label>
+                
+                <input type="radio" id="gender-female" name="gender" value="female">
+                <label for="gender-female" class="inline-label">Female</label>
+                
+                <input type="radio" id="gender-other" name="gender" value="other">
+                <label for="gender-other" class="inline-label">Other</label>
+            </div>
+
+            <!-- Requirement 4: Select element with 6 options for Course Program Selection -->
+            <div class="form-group">
+                <label for="program">Preferred Course/Program *</label>
+                <select id="program" name="selectedProgram" required>
+                    <option value="" disabled selected>-- Select a Program --</option>
+                    <option value="cs">B.S. Computer Science</option>
+                    <option value="ba">B.A. Business Administration</option>
+                    <option value="me">B.S. Mechanical Engineering</option>
+                    <option value="bio">B.S. Biotechnology</option>
+                    <option value="psych">B.A. Psychology</option>
+                    <option value="data">M.S. Data Analytics</option>
+                </select>
+            </div>
+
+            <!-- Requirement 5: Multiple-choice field (Checkboxes) where appropriate -->
+            <div class="form-group">
+                <label>Extracurricular Interests (Select all that apply)</label>
+                <input type="checkbox" id="interest-sports" name="interests" value="sports">
+                <label for="interest-sports" class="inline-label">Sports</label>
+                
+                <input type="checkbox" id="interest-music" name="interests" value="music">
+                <label for="interest-music" class="inline-label">Music & Arts</label>
+                
+                <input type="checkbox" id="interest-coding" name="interests" value="coding">
+                <label for="interest-coding" class="inline-label">Coding Club</label>
+            </div>
+
+            <!-- Requirement 2: Category Dropdown -->
+            <div class="form-group">
+                <label for="category">Admission Category *</label>
+                <select id="category" name="admissionCategory" required>
+                    <option value="general">General</option>
+                    <option value="scholarship">Merit Scholarship</option>
+                    <option value="international">International Student</option>
+                    <option value="transfer">Transfer Student</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <!-- Requirement 6: Academic Qualifications Details -->
+        <fieldset>
+            <legend>Academic History</legend>
+
+            <div class="form-group">
+                <label for="qualification">Previous Qualification *</label>
+                <input type="text" id="qualification" name="previousQualification" required placeholder="e.g., High School Diploma, Associate Degree">
+            </div>
+
+            <div class="form-group">
+                <label for="school-name">School / College Name *</label>
+                <input type="text" id="school-name" name="schoolName" required placeholder="Name of institution last attended">
+            </div>
+
+            <div class="form-group">
+                <!-- Requirement 7: min, max, step attributes matching standard percentage scales -->
+                <label for="cgpa">Percentage / CGPA *</label>
+                <input type="number" id="cgpa" name="academicScore" min="0" max="100" step="0.01" required placeholder="e.g., 94.50 or 3.8">
+            </div>
+
+            <div class="form-group">
+                <!-- Requirement 7: Numeric constraints on passing year -->
+                <label for="passing-year">Passing Year *</label>
+                <input type="number" id="passing-year" name="passingYear" min="2015" max="2026" step="1" required placeholder="YYYY">
+            </div>
+
+            <!-- Requirement 10: File Upload Field for supporting documentation -->
+            <div class="form-group">
+                <label for="document-upload">Upload Academic Transcript (PDF format) *</label>
+                <input type="file" id="document-upload" name="academicTranscript" accept=".pdf" required>
+            </div>
+        </fieldset>
+
+        <!-- Requirement 2 & 11: Address Information Details -->
+        <fieldset>
+            <legend>Contact Address</legend>
+            <div class="form-group">
+                <label for="address">Permanent Address *</label>
+                <textarea id="address" name="permanentAddress" rows="4" required placeholder="Enter your full street address, city, state, and zip code..."></textarea>
+            </div>
+        </fieldset>
+
+        <!-- Requirement 12: Declarations and terms consent Checkbox control -->
+        <div class="form-group">
+            <input type="checkbox" id="declaration" name="consentDeclaration" required>

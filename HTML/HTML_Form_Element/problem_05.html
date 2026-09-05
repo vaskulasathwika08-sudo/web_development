@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Checkout</title>
+</head>
+
+<body>
+
+    <h1>E-Commerce Checkout</h1>
+
+    <p>
+        Welcome to our online store! Please enter your customer,
+        delivery and payment details to complete your order.
+    </p>
+
+    <form>
+
+        <!-- Selected Products -->
+        <h2>Selected Products</h2>
+
+        <table border="1" cellpadding="10">
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Total</th>
+            </tr>
+
+            <tr>
+                <td>Wireless Headphones</td>
+                <td>1</td>
+                <td>₹1,500</td>
+                <td>₹1,500</td>
+            </tr>
+
+            <tr>
+                <td>Smart Watch</td>
+                <td>2</td>
+                <td>₹2,000</td>
+                <td>₹4,000</td>
+            </tr>
+
+            <tr>
+                <td>Bluetooth Speaker</td>
+                <td>1</td>
+                <td>₹1,200</td>
+                <td>₹1,200</td>
+            </tr>
+
+            <tr>
+                <th colspan="3">Grand Total</th>
+                <th>₹6,700</th>
+            </tr>
+        </table>
+
+        <hr>
+
+        <!-- Customer Information -->
+        <h2>Customer Information</h2>
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name"
+               placeholder="Enter your name" required>
+        <br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"
+               placeholder="example@gmail.com" required>
+        <br><br>
+
+        <label for="mobile">Mobile Number:</label><br>
+        <input type="tel" id="mobile" name="mobile"
+               placeholder="10-digit mobile number"
+               pattern="[0-9]{10}" required>
+        <br><br>
+
+        <!-- Delivery Address -->
+        <h2>Delivery Address</h2>
+
+        <label for="house">House / Street:</label><br>
+        <input type="text" id="house" name="house"
+               placeholder="House number and street" required>
+        <br><br>
+
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city" required>
+        <br><br>
+
+        <label for="state">State:</label><br>
+        <select id="state" name="state" required>
+            <option value="">-- Select State --</option>
+            <option>Andhra Pradesh</option>
+            <option>Telangana</option>
+            <option>Karnataka</option>
+            <option>Tamil Nadu</option>
+            <option>Maharashtra</option>
+            <option>Kerala</option>
+        </select>
+        <br><br>
+
+        <label for="postal">Postal Code:</label><br>
+        <input type="text" id="postal" name="postal"
+               placeholder="6-digit postal code"
+               pattern="[0-9]{6}" maxlength="6" required>
+        <br><br>
+
+        <label for="country">Country:</label><br>
+        <select id="country" name="country" required>
+            <option value="">-- Select Country --</option>
+            <option>India</option>
+            <option>United States</option>
+            <option>United Kingdom</option>
+            <option>Canada</option>
+            <option>Australia</option>
+        </select>
+        <br><br>
+
+        <!-- Delivery Choices -->
+        <h2>Delivery Method</h2>
+
+        <input type="radio" id="standard" name="delivery" value="Standard" required>
+        <label for="standard">Standard</label><br>
+
+        <input type="radio" id="express" name="delivery" value="Express">
+        <label for="express">Express</label><br>
+
+        <input type="radio" id="sameday" name="delivery" value="Same Day">
+        <label for="sameday">Same Day</label>
+
+        <hr>
+
+        <!-- Payment -->
+        <h2>Payment Method</h2>
+
+        <input type="radio" id="card" name="payment" value="Card" required>
+        <label for="card">Card</label><br>
+
+        <input type="radio" id="cod" name="payment" value="Cash on Delivery">
+        <label for="cod">Cash on Delivery</label><br>
+
+        <input type="radio" id="upi" name="payment" value="UPI">
+        <label for="upi">UPI / Online Payment</label>
+
+        <!-- Card Details -->
+        <h3>Card Details</h3>
+
+        <label for="cardname">Card Holder Name:</label><br>
+        <input type="text" id="cardname" name="cardname">
+        <br><br>
+
+        <label for="cardnumber">Card Number:</label><br>
+        <input type="text" id="cardnumber" name="cardnumber"
+               placeholder="16-digit card number"
+               pattern="[0-9]{16}" maxlength="16">
+        <br><br>
+
+        <label for="expiry">Expiry Date:</label><br>
+        <input type="month" id="expiry" name="expiry">
+        <br><br>
+
+        <label for="cvv">Security Code:</label><br>
+        <input type="password" id="cvv" name="cvv"
+               placeholder="3-digit CVV"
+               pattern="[0-9]{3}" maxlength="3">
+        <br><br>
+
+        <!-- Billing Address -->
+        <h2>Billing Address</h2>
+
+        <input type="checkbox" id="sameaddress" name="sameaddress">
+        <label for="sameaddress">
+            Billing address is same as delivery address
+        </label>
+
+        <hr>
+
+        <!-- Delivery Instructions -->
+        <h2>Delivery Instructions</h2>
+
+        <textarea id="instructions"
+                  name="instructions"
+                  rows="5"
+                  cols="50"
+                  placeholder="Enter any special delivery instructions"></textarea>
+
+        <br><br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Place Order">
+        <input type="reset" value="Clear Form">
+
+    </form>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 My Online Store. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
