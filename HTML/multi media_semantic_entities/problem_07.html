@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Property Showcase</title>
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #2b6cb0;
+            --light: #f7fafc;
+            --dark: #2d3748;
+        }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 2rem;
+        }
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        article {
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+        }
+        .media-container {
+            margin: 1.5rem 0;
+        }
+        iframe, video {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 6px;
+            border: none;
+        }
+        audio {
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        th, td {
+            border: 1px solid #e2e8f0;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th {
+            background-color: #edf2f7;
+        }
+        dl {
+            display: grid;
+            grid-template-columns: max-content auto;
+            gap: 0.5rem 1rem;
+            background: #f7fafc;
+            padding: 1rem;
+            border-left: 4px solid var(--secondary);
+        }
+        dt {
+            font-weight: bold;
+        }
+        dd {
+            margin: 0;
+        }
+        aside {
+            background: #ebf8ff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            height: fit-content;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.25rem;
+            font-weight: 500;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #cbd5e0;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+        .checkbox-group input {
+            width: auto;
+            margin-top: 0.25rem;
+        }
+        button {
+            background: var(--secondary);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background: #2c5282;
+        }
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Semantic Header & Navigation -->
+    <header>
+        <h1>Apex Horizon &trade;</h1>
+        <nav>
+            <a href="#overview">Overview</a>
+            <a href="#listings">Properties</a>
+            <a href="#comparison">Configurations</a>
+            <a href="#enquiry">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Layout Area -->
+    <main>
+        <div id="content-area">
+            
+            <!-- Project Overview Section -->
+            <section id="overview">
+                <h2>Project Overview</h2>
+                <p>Welcome to <strong>Apex Horizon</strong>, a premium residential master-planned community. Designed for modern living, this architectural marvel combines luxury, sustainability, and cutting-edge amenities to offer an unmatched lifestyle &mdash; the ultimate sanctuary for your family.</p>
+                
+                <h3>Buying Steps</h3>
+                <ol>
+                    <li>Select your preferred apartment configuration.</li>
+                    <li>Submit the online expression of interest enquiry form.</li>
+                    <li>Consult with our dedicated &amp; certified relationship managers.</li>
+                    <li>Pay the initial booking amount securement fee.</li>
+                    <li>Complete the formal legal verification and agreement signing.</li>
+                </ol>
+            </section>
+
+            <!-- Property Listings Section with Semantic Articles -->
+            <section id="listings">
+                <h2>Featured Residences</h2>
+                
+                <article>
+                    <h3>Premium 3 BHK Penthouse</h3>
+                    <img src="https://unsplash.com" alt="Luxury Living Room Interior View" width="400" height="250">
+                    
+                    <p>Experience elevated living with panoramic city views, expansive private terraces, and top-of-the-line custom interior finishes.</p>
+                    
+                    <h4>Key Specifications</h4>
+                    <!-- Description List requirement -->
+                    <dl>
+                        <dt>Carpet Area</dt>
+                        <dd>2,450 sq.&nbsp;ft. (approx. 227.6 m&sup2;)</dd>
+                        <dt>Maintenance</dt>
+                        <dd>&dollar;350 &sol; Month</dd>
+                        <dt>Possession</dt>
+                        <dd>December 2027</dd>
+                        <dt>Booking Amount</dt>
+                        <dd>&dollar;10,000 &pound;</dd>
+                    </dl>
+
+                    <h4>Amenities</h4>
+                    <ul><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Property Showcase</title>
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #2b6cb0;
+            --light: #f7fafc;
+            --dark: #2d3748;
+        }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 2rem;
+        }
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        article {
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+        }
+        .media-container {
+            margin: 1.5rem 0;
+        }
+        iframe, video {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 6px;
+            border: none;
+        }
+        audio {
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        th, td {
+            border: 1px solid #e2e8f0;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th {
+            background-color: #edf2f7;
+        }
+        dl {
+            display: grid;
+            grid-template-columns: max-content auto;
+            gap: 0.5rem 1rem;
+            background: #f7fafc;
+            padding: 1rem;
+            border-left: 4px solid var(--secondary);
+        }
+        dt {
+            font-weight: bold;
+        }
+        dd {
+            margin: 0;
+        }
+        aside {
+            background: #ebf8ff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            height: fit-content;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.25rem;
+            font-weight: 500;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #cbd5e0;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+        .checkbox-group input {
+            width: auto;
+            margin-top: 0.25rem;
+        }
+        button {
+            background: var(--secondary);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background: #2c5282;
+        }
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Semantic Header & Navigation -->
+    <header>
+        <h1>Apex Horizon &trade;</h1>
+        <nav>
+            <a href="#overview">Overview</a>
+            <a href="#listings">Properties</a>
+            <a href="#comparison">Configurations</a>
+            <a href="#enquiry">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Layout Area -->
+    <main>
+        <div id="content-area">
+            
+            <!-- Project Overview Section -->
+            <section id="overview">
+                <h2>Project Overview</h2>
+                <p>Welcome to <strong>Apex Horizon</strong>, a premium residential master-planned community. Designed for modern living, this architectural marvel combines luxury, sustainability, and cutting-edge amenities to offer an unmatched lifestyle &mdash; the ultimate sanctuary for your family.</p>
+                
+                <h3>Buying Steps</h3>
+                <ol>
+                    <li>Select your preferred apartment configuration.</li>
+                    <li>Submit the online expression of interest enquiry form.</li>
+                    <li>Consult with our dedicated &amp; certified relationship managers.</li>
+                    <li>Pay the initial booking amount securement fee.</li>
+                    <li>Complete the formal legal verification and agreement signing.</li>
+                </ol>
+            </section>
+
+            <!-- Property Listings Section with Semantic Articles -->
+            <section id="listings">
+                <h2>Featured Residences</h2>
+                
+                <article>
+                    <h3>Premium 3 BHK Penthouse</h3>
+                    <img src="https://unsplash.com" alt="Luxury Living Room Interior View" width="400" height="250">
+                    
+                    <p>Experience elevated living with panoramic city views, expansive private terraces, and top-of-the-line custom interior finishes.</p>
+                    
+                    <h4>Key Specifications</h4>
+                    <!-- Description List requirement -->
+                    <dl>
+                        <dt>Carpet Area</dt>
+                        <dd>2,450 sq.&nbsp;ft. (approx. 227.6 m&sup2;)</dd>
+                        <dt>Maintenance</dt>
+                        <dd>&dollar;350 &sol; Month</dd>
+                        <dt>Possession</dt>
+                        <dd>December 2027</dd>
+                        <dt>Booking Amount</dt>
+                        <dd>&dollar;10,000 &pound;</dd>
+                    </dl>
+
+                    <h4>Amenities</h4>
+                    <ul>
+                        <li>Private infinity-edge swimming pool access</li>
+                        <li>Smart home automation infrastructure</li>
+                        <li>High-speed fiber optic internet connectivity</li>
+                        <li>24&sol;7 dedicated multi-tier security detail</li>
+                    </ul>
+
+                    <!-- Embedded Video & Audio Elements requirement -->
+                    <div class="media-container">
+                        <h4>Virtual Property Tour Video</h4>
+                        <video controls poster="https://unsplash.com">
+                            <source src="https://w3schools.com" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="media-container">
+                        <h4>Sales Agent Overview Audio</h4>
+                        <audio controls>
+                            <source src="https://w3schools.com" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Comparison Table Section (At least 6 configurations & columns) -->
+            <section id="comparison">
+                <h2>Configuration Comparison Grid</h2>
+                <div style="overflow-x: auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Area (m&sup2;)</th>
+                                <th>Bedrooms</th>
+                                <th>Floor</th>
+                                <th>Price</th>
+                                <th>Availability</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Studio Elite</td>
+                                <td>45 m&sup2;</td>
+                                <td>1 BHK</td>
+                                <td>3rd - 10th</td>
+                                <td>&dollar;250,000</td>
+                                <td>Available</td>
+                            </tr>
+                            <tr>
+                                <td>Executive Suite</td>
+                                <td>85 m&sup2;</td>
+                                <td>2 BHK</td>
+                                <td>2nd - 15th</td>
+                                <td>&dollar;420,000</td>
+                                <td>Selling Fast</td>
+                            </tr>
+                            <tr>
+                                <td>Family Deluxe</td>
+                                <td>120 m&sup2;</td>
+                                <td>3 BHK</td>
+                                <td>Ground - 5th</td>
+                                <td>&dollar;580,000</td>
+                                <td>Limited Units</td>
+                            </tr>
+                            <tr>
+                                <td>Sky Villa</td>
+                        <li>Private infinity-edge swimming pool access</li>
+                        <li>Smart home automation infrastructure</li>
+                        <li>High-speed fiber optic internet connectivity</li>
+                        <li>24&sol;7 dedicated multi-tier security detail</li>
+                    </ul>
+
+                    <!-- Embedded Video & Audio Elements requirement -->
+                    <div class="media-container">
+                        <h4>Virtual Property Tour Video</h4>
+                        <video controls poster="https://unsplash.com">
+                            <source src="https://w3schools.com" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="media-container">
+                        <h4>Sales Agent Overview Audio</h4>
+                        <audio controls>
+                            <source src="https://w3schools.com" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Comparison Table Section (At least 6 configurations & columns) -->
+            <section id="comparison">
+                <h2>Configuration Comparison Grid</h2>
+                <div style="overflow-x: auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Area (m&sup2;)</th>
+                                <th>Bedrooms</th>
+                                <th>Floor</th>
+                                <th>Price</th>
+                                <th>Availability</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Studio Elite</td>
+                                <td>45 m&sup2;</td>
+                                <td>1 BHK</td>
+                                <td>3rd - 10th</td>
+                                <td>&dollar;250,000</td>
+                                <td>Available</td>
+                            </tr>
+                            <tr>
+                                <td>Executive Suite</td>
+                                <td>85 m&sup2;</td>
+                                <td>2 BHK</td>
+                                <td>2nd - 15th</td>
+                                <td>&dollar;420,000</td>
+                                <td>Selling Fast</td>
+                            </tr>
+                            <tr>
+                                <td>Family Deluxe</td>
+                                <td>120 m&sup2;</td>
+                                <td>3 BHK</td>
+                                <td>Ground - 5th</td>
+                                <td>&dollar;580,000</td>
+                                <td>Limited Units</td>
+                            </tr>
+                            <tr>
+                                <td>Sky Villa</td><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Property Showcase</title>
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #2b6cb0;
+            --light: #f7fafc;
+            --dark: #2d3748;
+        }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 2rem;
+        }
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        article {
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+        }
+        .media-container {
+            margin: 1.5rem 0;
+        }
+        iframe, video {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 6px;
+            border: none;
+        }
+        audio {
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        th, td {
+            border: 1px solid #e2e8f0;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th {
+            background-color: #edf2f7;
+        }
+        dl {
+            display: grid;
+            grid-template-columns: max-content auto;
+            gap: 0.5rem 1rem;
+            background: #f7fafc;
+            padding: 1rem;
+            border-left: 4px solid var(--secondary);
+        }
+        dt {
+            font-weight: bold;
+        }
+        dd {
+            margin: 0;
+        }
+        aside {
+            background: #ebf8ff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            height: fit-content;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.25rem;
+            font-weight: 500;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #cbd5e0;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+        .checkbox-group input {
+            width: auto;
+            margin-top: 0.25rem;
+        }
+        button {
+            background: var(--secondary);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background: #2c5282;
+        }
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Semantic Header & Navigation -->
+    <header>
+        <h1>Apex Horizon &trade;</h1>
+        <nav>
+            <a href="#overview">Overview</a>
+            <a href="#listings">Properties</a>
+            <a href="#comparison">Configurations</a>
+            <a href="#enquiry">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Layout Area -->
+    <main>
+        <div id="content-area">
+            
+            <!-- Project Overview Section -->
+            <section id="overview">
+                <h2>Project Overview</h2>
+                <p>Welcome to <strong>Apex Horizon</strong>, a premium residential master-planned community. Designed for modern living, this architectural marvel combines luxury, sustainability, and cutting-edge amenities to offer an unmatched lifestyle &mdash; the ultimate sanctuary for your family.</p>
+                
+                <h3>Buying Steps</h3>
+                <ol>
+                    <li>Select your preferred apartment configuration.</li>
+                    <li>Submit the online expression of interest enquiry form.</li>
+                    <li>Consult with our dedicated &amp; certified relationship managers.</li>
+                    <li>Pay the initial booking amount securement fee.</li>
+                    <li>Complete the formal legal verification and agreement signing.</li>
+                </ol>
+            </section>
+
+            <!-- Property Listings Section with Semantic Articles -->
+            <section id="listings">
+                <h2>Featured Residences</h2>
+                
+                <article>
+                    <h3>Premium 3 BHK Penthouse</h3>
+                    <img src="https://unsplash.com" alt="Luxury Living Room Interior View" width="400" height="250">
+                    
+                    <p>Experience elevated living with panoramic city views, expansive private terraces, and top-of-the-line custom interior finishes.</p>
+                    
+                    <h4>Key Specifications</h4>
+                    <!-- Description List requirement -->
+                    <dl>
+                        <dt>Carpet Area</dt>
+                        <dd>2,450 sq.&nbsp;ft. (approx. 227.6 m&sup2;)</dd>
+                        <dt>Maintenance</dt>
+                        <dd>&dollar;350 &sol; Month</dd>
+                        <dt>Possession</dt>
+                        <dd>December 2027</dd>
+                        <dt>Booking Amount</dt>
+                        <dd>&dollar;10,000 &pound;</dd>
+                    </dl>
+
+                    <h4>Amenities</h4>
+                    <ul>
+                        <li>Private infinity-edge swimming pool access</li>
+                        <li>Smart home automation infrastructure</li>
+                        <li>High-speed fiber optic internet connectivity</li>
+                        <li>24&sol;7 dedicated multi-tier security detail</li>
+                    </ul>
+
+                    <!-- Embedded Video & Audio Elements requirement -->
+                    <div class="media-container">
+                        <h4>Virtual Property Tour Video</h4>
+                        <video controls poster="https://unsplash.com">
+                            <source src="https://w3schools.com" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="media-container">
+                        <h4>Sales Agent Overview Audio</h4>
+                        <audio controls>
+                            <source src="https://w3schools.com" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Comparison Table Section (At least 6 configurations & columns) -->
+            <section id="comparison">
+                <h2>Configuration Comparison Grid</h2>
+                <div style="overflow-x: auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Area (m&sup2;)</th>
+                                <th>Bedrooms</th>
+                                <th>Floor</th>
+                                <th>Price</th>
+                                <th>Availability</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Studio Elite</td>
+                                <td>45 m&sup2;</td>
+                                <td>1 BHK</td>
+                                <td>3rd - 10th</td>
+                                <td>&dollar;250,000</td>
+                                <td>Available</td>
+                            </tr>
+                            <tr>
+                                <td>Executive Suite</td>
+                                <td>85 m&sup2;</td>
+                                <td>2 BHK</td>
+                                <td>2nd - 15th</td>
+                                <td>&dollar;420,000</td>
+                                <td>Selling Fast</td>
+                            </tr>
+                            <tr>
+                                <td>Family Deluxe</td>
+                                <td>120 m&sup2;</td>
+                                <td>3 BHK</td>
+                                <td>Ground - 5th</td>
+                                <td>&dollar;580,000</td>
+                                <td>Limited Units</td>
+                            </tr>
+                            <tr>
+                                <td>Sky Villa</td>
+

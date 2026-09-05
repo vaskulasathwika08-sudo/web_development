@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Global University & Admissions Portal</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #f4f7f6; color: #333; }
+        header { background: #002b49; color: #fff; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        nav a { color: #fff; text-decoration: none; margin-left: 20px; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        main { padding: 20px; max-width: 1200px; margin: auto; background: #fff; }
+        section { margin-bottom: 30px; }
+        article { background: #eef5f9; padding: 15px; border-left: 5px solid #002b49; margin-bottom: 20px; }
+        aside { background: #fff8e1; padding: 15px; border-left: 5px solid #ffa000; margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background: #002b49; color: white; }
+        form { background: #f9f9f9; padding: 20px; border: 1px solid #ccc; }
+        fieldset { border: 1px solid #002b49; padding: 15px; margin-bottom: 15px; }
+        legend { font-weight: bold; color: #002b49; }
+        .form-group { margin-bottom: 12px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, select, textarea { width: 100%; padding: 8px; border: 1px solid #ccc; box-sizing: border-box; }
+        button { background: #002b49; color: white; padding: 10px 15px; border: none; cursor: pointer; margin-right: 10px; }
+        button[type="reset"] { background: #777; }
+        footer { text-align: center; padding: 15px; background: #333; color: white; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Nav with meaningful sections -->
+    <header>
+        <h1>Apex Global University</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#programs">Programs</a>
+            <a href="#campus">Campus Life</a>
+            <a href="#admissions">Admissions</a>
+            <a href="#apply">Apply Now</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home / Intro section -->
+        <section id="home">
+            <h2>Welcome to Our Digital Campus</h2>
+            <p>Explore world-class academic programs, vibrant student communities, and a streamlined admission process designed for future leaders&trade;.</p>
+            
+            <!-- Student/Alumni Blockquote -->
+            <blockquote>
+                "Studying at Apex Global University transformed my career trajectory. The faculty and research opportunities are unmatched!" 
+                <cite>&mdash; Sarah Jenkins, Alumna (Class of 2024)</cite>
+            </blockquote>
+        </section>
+
+        <!-- Admission Announcement (Article) -->
+        <article>
+            <h2>Admission Announcement 2026/2027</h2>
+            <p>Applications for the upcoming Fall semester are now officially open&excl; We offer state-of-the-art facilities and generous financial aid options for eligible applicants.</p>
+        </article>
+
+        <!-- Application Guidance (Aside) -->
+        <aside>
+            <h2>Application Guidance &amp; Tips</h2>
+            <p>Make sure to scan and upload your academic transcripts and identity proof before hitting submit. Reach out to admissions&commat;apex.edu if you need assistance.</p>
+        </aside>
+
+        <!-- Media & Iframe Embeds -->
+        <section id="campus">
+            <h2>Campus Experience &amp; Location</h2>
+            <p>Take a quick virtual look around:</p>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <div>
+                    <h3>Campus Tour Video</h3>
+                    <iframe width="350" height="200" src="https://youtube.com" title="Campus Tour" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3>Orientation Audio</h3>
+                    <audio controls>
+                        <source src="https://soundhelix.com" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div>
+                    <h3>Campus Map (Iframe)</h3>
+                    <iframe width="350" height="200" src="https://openstreetmap.org"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lists Section: ul, ol, dl -->
+        <section id="facilities-steps">
+            <h2>Campus Facilities &amp; Guidelines</h2>
+            
+            <h3>Campus Facilities (Using <code>&lt;ul&gt;</code>)</h3>
+            <ul>
+                <li>24&sol;7 Central Library with digital archives</li>
+                <li>Advanced Robotics &amp; AI Research Labs</li>
+                <li>Olympic-size Swimming Pool &amp; Indoor Stadium</li>
+            </ul>
+
+            <h3>Admission Steps (Using <code>&lt;ol&gt;</code>)</h3>
+            <ol>
+                <li>Register an account on the admissions portal</li>
+                <li>Fill out personal and educational history</li>
+                <li>Upload necessary documents and pay the fee</li>
+                <li>Submit application and track status</li>
+            </ol>
+
+            <h3>Eligibility, Scholarship, Merit List &amp; Application Fee (Using <code>&lt;dl&gt;</code>)</h3>
+            <dl>
+                <dt><strong>Eligibility</strong></dt>
+                <dd>Minimum 60&percnt; aggregate score in high school or equivalent degree.</dd>
+                <dt><strong>Scholarship</strong></dt>
+                <dd>Up to 50&percnt; tuition waiver for top scorers on the entrance test.</dd>
+                <dt><strong>Merit List</strong></dt>
+                <dd>Will be published on the portal by August 15th.</dd>
+                <dt><strong>Application Fee</strong></dt>
+                <dd>&dollar;50 non-refundable processing fee for international applicants.</dd>
+            </dl>
+        </section>
+
+        <!-- Program Table with at least 6 rows -->
+        <section id="programs">
+            <h2>Academic Programs Offered</h2>
+            <table>
+                <caption>Available Undergraduate and Graduate Courses &copy; 2026</caption>
+                <thead>
+                    <tr>
+                        <th>Program Name</th>
+                        <th>Duration</th>
+                        <th>Eligibility</th>
+                        <th>Intake</th>
+                        <th>Fee (Per Semester)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B.Sc. Computer Science</td>
+                        <td>4 Years</td>
+                        <td>10+2 with Math</td>
+                        <td>120 Seats</td>
+                        <td>&dollar;4,500</td>
+                    </tr>
+                    <tr>
+                        <td>B.A. Economics</td>
+                        <td>3 Years</td>
+                        <td>10+2 any stream</td>
+                        <td>90 Seats</td>
+                        <td>&dollar;3,800</td>
+                    </tr>
+                    <tr>
+                        <td>B.Tech. Mechanical Eng.</td>
+                        <td>4 Years</td>
+                        <td>10+2 with PCM</td>
+                        <td>150 Seats</td>
+                        <td>&dollar;5,000</td>
+                    </tr>
+                    <tr>
+                        <td>M.Sc. Data Science</td>
+                        <td>2 Years</td>
+                        <td>Bachelor in relevant field</td>
+                        <td>60 Seats</td>
+                        <td>&dollar;6,000</td>
+                    </tr>
+                    <tr>
+                        <td>MBA Global Business</td>
+                        <td>2 Years</td>
+                        <td>Graduation + Work Exp.</td>
+                        <td>80 Seats</td>
+                        <td>&dollar;7,500</td>
+                    </tr>
+                    <tr>
+                        <td>Ph.D. Biotechnology</td>
+                        <td>3-5 Years</td>
+                        <td>Master Degree in Science</td>
+                        <td>25 Seats</td>
+                        <td>&dollar;3,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Apply Now Form -->
+        <section id="apply">
+            <h2>Online Application Form</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Mobile Number:</label>
+                        <input type="tel" id="mobile" name="mobile" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Academic Selections</legend>
+                    <div class="form-group">
+                        <label for="program">Select Program:</label>

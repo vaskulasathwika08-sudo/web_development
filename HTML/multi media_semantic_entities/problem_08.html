@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking & Personal Finance Education Portal</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; }
+        header { background: #003366; color: white; padding: 20px; text-align: center; }
+        nav { background: #002244; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        main { display: flex; flex-wrap: wrap; padding: 20px; max-width: 1200px; margin: auto; }
+        section { flex: 3; min-width: 300px; margin-right: 20px; }
+        aside { flex: 1; min-width: 250px; background: #f4f4f4; padding: 20px; border-radius: 5px; }
+        article { background: #fff; border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; border-radius: 5px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #003366; color: white; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        form { background: #fff; padding: 20px; border: 1px solid #ccc; border-radius: 5px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 8px; box-sizing: border-box; }
+        .checkbox-group { display: flex; align-items: center; }
+        .checkbox-group input { width: auto; margin-right: 10px; }
+        button { background: #003366; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #002244; }
+        footer { background: #333; color: white; text-align: center; padding: 15px; margin-top: 20px; clear: both; }
+        .notice { background-color: #fff3cd; color: #856404; padding: 15px; border-left: 5px solid #ffeeba; margin-bottom: 20px; }
+        .media-container { margin: 20px 0; }
+        iframe, video { width: 100%; max-width: 560px; height: 315px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Apex Financial Education Portal</h1>
+        <p>Empowering you with knowledge for a secure financial future.</p>
+    </header>
+
+    <nav>
+        <a href="#accounts">Accounts</a>
+        <a href="#cards">Cards & Loans</a>
+        <a href="#calculator">Tools & Calculators</a>
+        <a href="#request-info">Request Information</a>
+    </nav>
+
+    <main>
+        <section>
+            <div class="notice">
+                <strong>&dbkarow; Notice &amp; Disclaimer:</strong> The information provided on this portal is for educational purposes &amp; general guidance only. It does not constitute formal financial advice. Always consult a certified professional before making significant financial commitments.
+            </div>
+
+            <article id="accounts">
+                <h2>Understanding Personal Accounts &amp; Smart Budgeting</h2>
+                <p>Choosing the correct bank account is the foundation of <strong>responsible personal finance</strong>. Whether saving for an emergency or managing daily expenses, knowing how interest works will save you money &DoubleLongLeftRightArrow; over time.</p>
+                
+                <blockquote>
+                    "Compound interest is the eighth wonder of the world. He who understands it, earns it... he who doesn't... pays it." &ndash; Anonymous
+                </blockquote>
+
+                <h3>Key Financial Tips</h3>
+                <ul>
+                    <li><strong>Emergency Fund:</strong> Stash away at least 3&ndash;6 months of living expenses.</li>
+                    <li><strong>Automation:</strong> Automatically transfer a percentage of your salary directly to savings.</li>
+                    <li><strong>Debt Paydown:</strong> Prioritize high-interest card balances to avoid compounding debt.</li>
+                </ul>
+
+                <h3>Step-by-Step Guide to Opening an Account</h3>
+                <ol>
+                    <li>Research and choose an account structure with zero maintenance fees.</li>
+                    <li>Gather required documentation (ID verification, proof of address).</li>
+                    <li>Submit the digital application or visit a local branch.</li>
+                    <li>Deposit the minimum initial balance to activate the account.</li>
+                </ol>
+            </article>
+
+            <article id="cards">
+                <h2>Product Comparison Matrix</h2>
+                <p>Review our comprehensive table below showcasing 6 core financial vehicles tailored for your diverse needs. Note that all interest metrics are bound by predefined terms &sum; and mathematical equations tailored to asset classes.</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Type</th>
+                            <th>Eligibility</th>
+                            <th>Rate/Charge</th>
+                            <th>Tenure</th>
+                            <th>Benefit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Basic Savings</strong></td>
+                            <td>Account</td>
+                            <td>Age &ge; 18</td>
+                            <td>2.5% &plusmn; Variable</td>
+                            <td>Ongoing</td>
+                            <td>High liquidity, low risk</td>
+                        </tr>
+                        <tr>
+                            <td><strong>High-Yield Checking</strong></td>
+                            <td>Account</td>
+                            <td>Min Deposit &pound;1,000</td>
+                            <td>3.0% APY</td>
+                            <td>Flexible</td>
+                            <td>Daily transaction rewards</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Platinum Cashback</strong></td>
+                            <td>Card</td>
+                            <td>Credit Score &gt; 720</td>
+                            <td>$0 Annual Fee</td>
+                            <td>Annual Renewal</td>
+                            <td>5% cashback on groceries</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Secured Credit Builder</strong></td>
+                            <td>Card</td>
+                            <td>Age &ge; 18</td>
+                            <td>18.9% APR</td>
+                            <td>Open-ended</td>
+                            <td>Builds credit score safely</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fixed Personal Loan</strong></td>
+                            <td>Loan</td>
+                            <td>Stable Income Verification</td>
+                            <td>6.5% Fixed Interest</td>
+                            <td>12 &ndash; 60 Months</td>
+                            <td>Lump-sum funding access</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Home Equity Line (HELOC)</strong></td>
+                            <td>Loan</td>
+                            <td>&ge; 20% Home Equity</td>
+                            <td>4.2% Prime Linked</td>
+                            <td>5 &ndash; 15 Years</td>
+                            <td>Tax-deductible low rates</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article id="media">
+                <h2>Interactive Financial Media Modules</h2>
+                
+                <div class="media-container">
+                    <h3>Educational Video: Budgeting 101</h3>
+                    <video controls poster="https://placeholder.com">
+                        <source src="movie.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div class="media-container">
+                    <h3>Awareness Audio: Avoiding Credit Card Traps</h3>
+                    <audio controls>
+                        <source src="audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </article>
+        </section>
+
+        <aside>
+            <div id="calculator" class="media-container">
+                <h3>Loan Calculator Resource</h3>
+                <iframe src="https://google.com" title="Financial Center Locator Widget"></iframe>
+            </div>
+
+            <h3>Financial Glossary Rules</h3>
+            <dl>
+                <dt><strong>Interest Rate</strong></dt>
+                <dd>The percentage proportion of a loan charged by a lender to a borrower.</dd>
+                
+                <dt><strong>EMI</strong></dt>
+                <dd>Equated Monthly Installment; a fixed payment amount made by a borrower to a lender at a specified date each calendar month.</dd>
+                
+                <dt><strong>Principal</strong></dt>
+                <dd>The original sum of money lent or invested on which interest is calculated.</dd>
+                
+                <dt><strong>Tenure</strong></dt>
+                <dd>The specified amount of time or duration allocated for full repayment of a loan facility.</dd>
+            </dl>
+
+            <h3 id="request-info">Education Request Form</h3>
+            <form action="#" method="POST">

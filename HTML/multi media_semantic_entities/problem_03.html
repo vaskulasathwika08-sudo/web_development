@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel & Tourism Destination Explorer - Kyoto, Japan</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+        header, nav, main, footer { padding: 20px; margin: 10px; background: #fff; border-radius: 5px; }
+        nav a { margin-right: 15px; text-decoration: none; color: #0066cc; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background: #f2f2f2; }
+        form fieldset { margin-bottom: 15px; padding: 15px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Destination Explorer &mdash; Kyoto Heritage &hearts;</h1>
+        <p>Explore attractions, travel tips, and book your journey today &trade;!</p>
+    </header>
+
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#attractions">Attractions</a>
+        <a href="#itinerary">1-Day Itinerary</a>
+        <a href="#services">Visitor Info</a>
+        <a href="#enquiry">Enquiry Form</a>
+    </nav>
+
+    <main>
+        <!-- Destination Overview and Media -->
+        <section id="overview">
+            <h2>Destination Overview</h2>
+            <p>Welcome to Kyoto, the cultural heart of Japan &yen;. Experience ancient temples, traditional tea houses, and stunning seasonal gardens.</p>
+            
+            <figure>
+                <img src="kyoto-placeholder.jpg" alt="Scenic view of Kyoto Pagoda" width="400">
+                <figcaption>Traditional Pagoda view in historic Kyoto &copy;</figcaption>
+            </figure>
+
+            <h3>Media Guide</h3>
+            <p>Watch our promotional video and listen to the audio guide:</p>
+            <video controls width="300">
+                <source src="kyoto-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <br><br>
+            <audio controls>
+                <source src="kyoto-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <!-- Attractions List (ul) -->
+        <section id="attractions">
+            <h2>Top Attractions</h2>
+            <ul>
+                <li>Kinkaku-ji (The Golden Pavilion)</li>
+                <li>Fushimi Inari Shrine (10,000 Torii Gates)</li>
+                <li>Arashiyama Bamboo Grove</li>
+                <li>Kiyomizu-dera Temple</li>
+            </ul>
+        </section>
+
+        <!-- One-Day Itinerary (ol) -->
+        <section id="itinerary">
+            <h2>One-Day Itinerary</h2>
+            <ol>
+                <li>08:30 AM &ndash; Morning walk through Arashiyama Bamboo Grove.</li>
+                <li>11:00 AM &ndash; Visit the stunning Golden Pavilion (Kinkaku-ji).</li>
+                <li>01:00 PM &ndash; Traditional lunch in Gion district.</li>
+                <li>03:30 PM &ndash; Hike the Torii gates at Fushimi Inari Shrine.</li>
+            </ol>
+        </section>
+
+        <!-- Visitor Information (dl) -->
+        <section id="services">
+            <h2>Visitor Services &amp; Logistics</h2>
+            <dl>
+                <dt>Check-in</dt>
+                <dd>Standard hotel check-in time is 3:00 PM local time.</dd>
+                
+                <dt>Guided Tour</dt>
+                <dd>Daily English-speaking heritage tours depart at 9:00 AM from Kyoto Station.</dd>
+                
+                <dt>Local Transport</dt>
+                <dd>Subway and city bus networks cover all major shrines efficiently.</dd>
+                
+                <dt>Travel Pass</dt>
+                <dd>Get the 1-Day Kyoto Subway &amp; Bus Pass for unlimited rides &reg;.</dd>
+            </dl>
+        </section>
+
+        <!-- Attraction Table (8+ rows) -->
+        <section>
+            <h2>Attraction Reference Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Attraction</th>
+                        <th>Type</th>
+                        <th>Best Time</th>
+                        <th>Duration</th>
+                        <th>Entry Fee</th>
+                        <th>Reference</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Kinkaku-ji</td><td>Temple</td><td>Early Morning</td><td>1.5 Hours</td><td>&yen;500</td><td>Official Site</td></tr>
+                    <tr><td>Fushimi Inari</td><td>Shrine</td><td>Morning/Late Aft.</td><td>2.5 Hours</td><td>Free (&yen;0)</td><td>Guidebook</td></tr>
+                    <tr><td>Arashiyama</td><td>Nature</td><td>Sunrise</td><td>2 Hours</td><td>Free</td><td>Local Tourism</td></tr>
+                    <tr><td>Kiyomizu-dera</td><td>Temple</td><td>Sunset</td><td>2 Hours</td><td>&yen;400</td><td>Heritage Org</td></tr>
+                    <tr><td>Gion District</td><td>Cultural</td><td>Evening</td><td>2 Hours</td><td>Free</td><td>City Walk</td></tr>
+                    <tr><td>Nijo Castle</td><td>Castle</td><td>Mid-Day</td><td>1.5 Hours</td><td>&yen;800</td><td>History Arch</td></tr>
+                    <tr><td>Philosopher's Path</td><td>Walking</td><td>Spring/Autumn</td><td>1 Hour</td><td>Free</td><td>Map Ref</td></tr>
+                    <tr><td>Ryoan-ji</td><td>Garden</td><td>Morning</td><td>1 Hour</td><td>&yen;600</td><td>Temple Log</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Map Iframe -->
+        <section>
+            <h2>Interactive Map Location</h2>
+            <iframe src="https://google.com..." width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <!-- Trip Enquiry Form -->
+        <section id="enquiry">
+            <h2>Trip Enquiry Form</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal &amp; Trip Details</legend>
+                    <label>Name: <input type="text" name="name" required></label><br><br>
+                    <label>Email: <input type="email" name="email" required></label><br><br>
+                    <label>Mobile: <input type="tel" name="mobile" required></label><br><br>
+                    <label>Travel Date: <input type="date" name="travel_date" required></label><br><br>
+                    <label>Visitors Count: <input type="number" name="visitors" min="1" max="20" required></label><br><br>
+                    
+                    <label>Package Select:
+                        <select name="package">
+                            <option value="basic">Standard Heritage (&yen;30,000)</option>
+                            <option value="premium">Luxury Cultural (&yen;75,000)</option>
+                        </select>
+                    </label><br><br>
+
+                    <label>Preferences:
+                        <input type="checkbox" name="pref" value="food"> Food Tour
+                        <input type="checkbox" name="pref" value="photo"> Photography
+                    </label><br><br>
+
+                    <label>Message: <br><textarea name="message" rows="4" cols="30"></textarea></label><br><br>
+                    <label><input type="checkbox" name="consent" required> I agree to the privacy policy &amp; terms &dagger;.</label><br><br>
+                    <button type="submit">Submit Enquiry</button>
+                </fieldset>
+            </form>
+        </section>
+        
+        <aside>
+            <p><strong>Note:</strong> Currency exchange rates against the US Dollar ($) apply dynamically upon booking &hellip;</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Travel &amp; Tourism Destination Explorer. All rights reserved &reg;.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Media Digital Magazine</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #222;
+        }
+
+        header {
+            background-color: #111;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        main {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        section, aside {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        article {
+            border-bottom: 1px solid #ccc;
+            padding: 15px 0;
+        }
+
+        article:last-child {
+            border-bottom: none;
+        }
+
+        img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th, td {
+            border: 1px solid #aaa;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #222;
+            color: white;
+        }
+
+        form input,
+        form select,
+        form textarea {
+            width: 95%;
+            padding: 10px;
+            margin: 8px 0;
+        }
+
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>NEWS &amp; MEDIA</h1>
+    <p>Your Daily Digital Magazine</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#technology">Technology</a>
+    <a href="#business">Business</a>
+    <a href="#sports">Sports</a>
+    <a href="#culture">Culture</a>
+    <a href="#breaking">Breaking News</a>
+</nav>
+
+<main id="home">
+
+    <!-- Featured Story -->
+    <section>
+        <h2>Featured Story</h2>
+
+        <article>
+            <h2>AI Technology Is Changing the Future</h2>
+
+            <p>
+                <strong>By Ananya Rao</strong> |
+                Published: September 5, 2026
+            </p>
+
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995"
+                 alt="Artificial Intelligence technology">
+
+            <p>
+                Artificial Intelligence is rapidly changing the way people
+                learn, work and communicate. New technologies are creating
+                opportunities in education, business and entertainment.
+            </p>
+
+            <blockquote>
+                <q>Technology becomes powerful when it improves people's lives.</q>
+            </blockquote>
+
+            <p>
+                <a href="#technology">Read the full technology section</a>
+            </p>
+        </article>
+    </section>
+
+    <!-- Categories -->
+    <section id="technology">
+        <h2>Categories</h2>
+
+        <ul>
+            <li>Technology</li>
+            <li>Business</li>
+            <li>Sports</li>
+            <li>Culture</li>
+            <li>Breaking News</li>
+        </ul>
+    </section>
+
+    <!-- Top Stories -->
+    <section>
+        <h2>Top Stories</h2>
+
+        <ol>
+            <li>AI is transforming modern education</li>
+            <li>Global markets show positive growth</li>
+            <li>India prepares for major sporting events</li>
+            <li>New cultural festival attracts visitors</li>
+            <li>Scientists announce a new discovery</li>
+        </ol>
+    </section>
+
+    <!-- Independent News Articles -->
+    <section id="business">
+        <h2>Latest News</h2>
+
+        <article>
+            <h3>Business: Markets Show Strong Growth</h3>
+            <p><strong>Author:</strong> Rahul Sharma</p>
+            <p>
+                Major markets showed positive movement as investors responded
+                to new economic developments.
+            </p>
+        </article>
+
+        <article id="sports">
+            <h3>Sports: Young Athletes Make Their Mark</h3>
+            <p><strong>Author:</strong> Priya Kumar</p>
+            <p>
+                Young athletes are gaining attention after impressive
+                performances in national competitions.
+            </p>
+        </article>
+
+        <article id="culture">
+            <h3>Culture: Festival Celebrates Indian Heritage</h3>
+            <p><strong>Author:</strong> Meera Singh</p>
+            <p>
+                A colourful cultural festival is bringing traditional music,
+                art and dance to audiences across the country.
+            </p>
+        </article>
+
+        <article id="breaking">
+            <h3>Breaking News: Important Announcement</h3>
+            <p><strong>Author:</strong> News Desk</p>
+            <p>
+                Officials have released an important announcement concerning
+                upcoming public events.
+            </p>
+        </article>
+    </section>
+
+    <!-- Editorial, Breaking News, Opinion, Sponsored Content -->
+    <aside>
+        <h2>Editor's Desk</h2>
+
+        <dl>
+            <dt><strong>Editorial</strong></dt>
+            <dd>Our editorial team discusses important current issues.</dd>
+
+            <dt><strong>Breaking News</strong></dt>
+            <dd>Latest important developments from around the world.</dd>
+
+            <dt><strong>Opinion</strong></dt>
+            <dd>Views and opinions from our writers and contributors.</dd>
+
+            <dt><strong>Sponsored Content</strong></dt>
+            <dd>Clearly identified promotional and sponsored stories.</dd>
+        </dl>
+    </aside>
+
+    <!-- Video -->
+    <section>
+        <h2>News Report Video</h2>
+
+        <video width="600" controls>
+            <source src="news-report.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+    <!-- Audio -->
+    <section>
+        <h2>Breaking News Bulletin</h2>
+
+        <audio controls>
+            <source src="bulletin.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Iframe -->
+    <section>
+        <h2>News Resource / Map</h2>
+
+        <iframe
+            src="https://www.openstreetmap.org/export/embed.html"
+            width="100%"
+            height="350"
+            title="News map resource">
+        </iframe>
+    </section>
+
+    <!-- News Table -->
+    <section>
+        <h2>News Table</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Story</th>
+                    <th>Category</th>
+                    <th>Author</th>
+                    <th>Publish Time</th>
+                    <th>Status</th>
+                    <th>Reference</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>AI Changes Education</td>
+                    <td>Technology</td>
+                    <td>Ananya Rao</td>
+                    <td>09:00 AM</td>
+                    <td>Featured</td>
+                    <td>REF001</td>
+                </tr>
+
+                <tr>
+                    <td>Market Growth</td>
+                    <td>Business</td>
+                    <td>Rahul Sharma</td>
+                    <td>09:30 AM</td>
+                    <td>Published</td>
+                    <td>REF002</td>
+                </tr>
+
+                <tr>
+                    <td>Young Athletes Shine</td>
+                    <td>Sports</td>
+                    <td>Priya Kumar</td>
+                    <td>10:00 AM</td>
+                    <td>Published</td>
+                    <td>REF003</td>
+                </tr>
+
+                <tr>
+                    <td>Heritage Festival</td>
+                    <td>Culture</td>
+                    <td>Meera Singh</td>
+                    <td>10:30 AM</td>
+                    <td>Published</td>
+                    <td>REF004</td>
+                </tr>
+
+                <tr>
+                    <td>New Scientific Discovery</td>
+                    <td>Science</td>
+                    <td>Arjun Patel</td>
+                    <td>11:00 AM</td>
+                    <td>New</td>
+                    <td>REF005</td>
+                </tr>
+
+                <tr>
+                    <td>Global Technology Summit</td>
+                    <td>Technology</td>
+                    <td>Neha Verma</td>
+                    <td>11:30 AM</td>
+                    <td>Published</td>
+                    <td>REF006</td>
+                </tr>
+
+                <tr>
+                    <td>National Sports Event</td>
+                    <td>Sports</td>
+                    <td>Vikram Rao</td>
+                    <td>12:00 PM</td>
+                    <td>Updated</td>
+                    <td>REF007</td>
+                </tr>
+
+                <tr>
+                    <td>Economic Policy Update</td>
+                    <td>Business</td>
+                    <td>Riya Das</td>
+                    <td>12:30 PM</td>
+                    <td>Breaking</td>
+                    <td>REF008</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Newsletter / Contact Form -->
+    <section>
+        <h2>Newsletter &amp; Contact</h2>
+
+        <form>
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required>
+
+            <br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+
+            <br>
+
+            <label for="category">Category:</label><br>
+            <select id="category" name="category">
+                <option value="technology">Technology</option>
+                <option value="business">Business</option>
+                <option value="sports">Sports</option>
+                <option value="culture">Culture</option>
+                <option value="breaking">Breaking News</option>
+            </select>
+
+            <br>
+
+            <label>Frequency:</label><br>
+
+            <input type="radio" id="daily" name="frequency" value="daily">
+            <label for="daily">Daily</label>
+
+            <input type="radio" id="weekly" name="frequency" value="weekly">
+            <label for="weekly">Weekly</label>
+
+            <input type="radio" id="monthly" name="frequency" value="monthly">
+            <label for="monthly">Monthly</label>
+
+            <br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5"></textarea>
+
+            <br>
+
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">
+                I agree to receive news and updates.
+            </label>
+
+            <br><br>
+
+            <button type="submit">Subscribe</button>
+
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 News &amp; Media Digital Magazine. All Rights Reserved.</p>
+    <p>
+        &reg; News Media &trade; |
+        <a href="#home" style="color:white;">Back to Top</a>
+    </p>
+</footer>
+
+</body>
+</html>
