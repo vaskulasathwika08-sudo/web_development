@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.calculator {
+    width: 300px;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+    box-shadow: 0 0 10px #ccc;
+}
+
+.display {
+    grid-column: 1 / 5;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+button {
+    height: 50px;
+    border: none;
+    background: #eee;
+    font-size: 18px;
+}
+
+.operator {
+    background: black;
+    color: white;
+}
+
+.clear {
+    background: red;
+    color: white;
+}
+    </style>
+
+<div class="calculator">
+
+    <input type="text" class="display">
+
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button class="operator">+</button>
+
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button class="operator">-</button>
+
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button class="operator">*</button>
+
+    <button class="clear">C</button>
+    <button>0</button>
+    <button>=</button>
+    <button class="operator">/</button>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+.top-section {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.top-section h2 {
+    text-align: center;
+}
+
+.doctors {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.doctor {
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 2px 10px #ccc;
+}
+
+.doctor img {
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 8px;
+}
+
+.bottom-section {
+    width: 90%;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.bottom-card {
+    height: 150px;
+    padding: 30px;
+    background: #f2f2f2;
+}
+
+/* Medium */
+@media (max-width: 768px) {
+
+    .doctors {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bottom-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small */
+@media (max-width: 480px) {
+
+    .doctors {
+        grid-template-columns: 1fr;
+    }
+
+    .bottom-section {
+        grid-template-columns: 1fr;
+    }
+}
+    </style>
+
+<section class="top-section">
+
+    <h2>Our Specialists</h2>
+
+    <div class="doctors">
+
+        <div class="doctor">
+            <img src="https://preview.colorlib.com/theme/medino/assets/images/doctor1.jpg.webp">
+            <h3>Doctor 1</h3>
+            <p>Specialist</p>
+
+            <div class="buttons">
+                <button>View</button>
+                <button>Book</button>
+            </div>
+        </div>
+
+        <div class="doctor">
+            <img src="https://preview.colorlib.com/theme/medino/assets/images/doctor1.jpg.webp">
+            <h3>Doctor 2</h3>
+            <p>Specialist</p>
+
+            <div class="buttons">
+                <button>View</button>
+                <button>Book</button>
+            </div>
+        </div>
+
+        <div class="doctor">
+            <img src="https://preview.colorlib.com/theme/medino/assets/images/doctor1.jpg.webp">
+            <h3>Doctor 3</h3>
+            <p>Specialist</p>
+
+            <div class="buttons">
+                <button>View</button>
+                <button>Book</button>
+            </div>
+        </div>
+
+        <div class="doctor">
+            <img src="https://preview.colorlib.com/theme/medino/assets/images/doctor1.jpg.webp">
+            <h3>Doctor 4</h3>
+            <p>Specialist</p>
+
+            <div class="buttons">
+                <button>View</button>
+                <button>Book</button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="bottom-section">
+
+    <div class="bottom-card">Service 1</div>
+    <div class="bottom-card">Service 2</div>
+    <div class="bottom-card">Service 3</div>
+    <div class="bottom-card">Service 4</div>
+
+</section>
+
+</body>
+</html>

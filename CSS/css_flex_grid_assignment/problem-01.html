@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #17243a;
+    color: white;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px;
+}
+
+.gallery {
+    width: 70%;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 30%;
+    height: 150px;
+    object-fit: cover;
+}</style>
+
+    <header>
+        <div class="logo">GLA</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Gallery</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <h1>PHOTO GALLERY</h1>
+
+    <div class="gallery">
+        <img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp">
+        <img src="https://preview.colorlib.com/theme/pentax/img/project/2.jpg.webp">
+        <img src="https://preview.colorlib.com/theme/pentax/img/project/3.jpg.webp">
+        <img src="https://preview.colorlib.com/theme/pentax/img/project/4.jpg.webp">
+        <img src="https://preview.colorlib.com/theme/pentax/img/project/5.jpg.webp">
+        <img src="https://preview.colorlib.com/theme/pentax/img/project/6.jpg.webp">
+    </div>
+
+</body>
+</html>

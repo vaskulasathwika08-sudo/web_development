@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Investors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+.investors {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.investors h1 {
+    text-align: center;
+}
+
+.investor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.investor {
+    min-height: 120px;
+    padding: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #ddd;
+}
+
+.investor img {
+    max-width: 100%;
+    max-height: 70px;
+}
+
+/* Medium */
+@media (max-width: 768px) {
+
+    .investor-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small */
+@media (max-width: 480px) {
+
+    .investor-grid {
+        grid-template-columns: 1fr;
+    }
+}
+    </style>
+
+<section class="investors">
+
+    <h1>Our Investors</h1>
+
+    <div class="investor-grid">
+
+        <div class="investor">
+            <img src="https://www.masaischool.com/images/our-investors/indiaq.png">
+        </div>
+
+        <div class="investor">
+            <img src="https://www.masaischool.com/images/our-investors/omidyar.png">
+        </div>
+
+        <div class="investor">
+            <img src="https://www.masaischool.com/images/our-investors/unitus.png">
+        </div>
+
+        <div class="investor">
+            <img src="https://www.masaischool.com/images/our-investors/kalpavriksh.png">
+        </div>
+
+        <div class="investor">
+            <img src="https://www.masaischool.com/images/our-investors/Sequoia.png">
+        </div>
+
+        <div class="investor">
+            <img src="https://www.masaischool.com/images/our-investors/Ananth.png">
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>

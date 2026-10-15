@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        .cards {
+    width: 90%;
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cards div {
+    padding: 40px;
+    background: white;
+    box-shadow: 0 2px 10px #ccc;
+    text-align: center;
+}
+
+/* Medium */
+@media (max-width: 768px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small */
+@media (max-width: 480px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+    </style>
+
+<div class="cards">
+
+    <div>Capgemini</div>
+    <div>Accenture</div>
+    <div>Amazon</div>
+
+    <div>Microsoft</div>
+    <div>Wipro</div>
+    <div>Google</div>
+
+    <div>Paytm</div>
+    <div>Infosys</div>
+    <div>Flipkart</div>
+
+</div>
+
+</body>
+</html>
