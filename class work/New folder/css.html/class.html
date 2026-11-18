@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>css grid</title>
+    <style>
+        .container{
+            dispaly:grid;
+            gap:10px;
+            margin:10px;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(3,200px);
+            justify-content: center;
+
+        }
+        .container>div:nth-child(1){
+            background-color: blue;
+        }
+        .container>div:nth-child(2){
+            background-color: orange;
+        }
+        .container>div:nth-child(3){
+            background-color: yellow;
+        }
+        .container>div:nth-child(4){
+            background-color: purple;
+        }
+        .container>div:nth-child(5){
+            background-color: bisque;
+        }
+        .container>div:nth-child(6){
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>header</div>
+        <div>menu</div>
+        <div>main</div>
+        <div>ad1</div>
+        <div>ad2</div>
+        <div>footer</div>
+    </div>
+    
+</body>
+</html>

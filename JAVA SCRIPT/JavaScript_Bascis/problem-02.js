@@ -1,0 +1,10 @@
+var notebookprice=45;
+var penprice=10;
+var notebookqunatity=3;
+var penquantity=2;
+var notebookCost=(notebookprice*notebookqunatity);
+var penCost=(penprice*penquantity);
+var totalprice=(notebookprice*notebookqunatity)+(penprice*penquantity);
+console.log("Total Price: " + totalprice);
+console.log("Notebook Cost: " + notebookCost);
+console.log("Pen Cost: " + penCost);

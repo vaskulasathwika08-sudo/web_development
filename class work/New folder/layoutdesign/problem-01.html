@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 80px;
+            padding: 0 25px;
+            box-shadow: 0 2px 5px white;
+            background-color: white;
+        }
+
+        .logo {
+            font-size: 35px;
+            font-weight: bold;
+            font-style: italic;
+            background: linear-gradient(
+                45deg, deeppink, orange, purple
+            );
+            color: transparent;
+            background-clip: text;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #282c3f;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 30px 0;
+        }
+
+        .menu a:hover {
+            border-bottom: 3px solid deeppink;
+        }
+
+        .studio {
+            position: relative;
+        }
+
+        .new {
+            color: darkpink;
+            font-size: 9px;
+            vertical-align: top;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 12px;
+            border-radius: 4px;
+            width: 280px;
+        }
+
+        .search span {
+            margin-right: 10px;
+        }
+
+        .search input {
+            border: none;
+            outline: none;
+            background: transparent;
+            width: 100%;
+            font-size: 12px;
+        }
+
+        .icons {
+            display: flex;
+            gap: 18px;
+            text-align: center;
+        }
+
+        .icons a {
+            text-decoration: none;
+            color: #282c3f;
+            font-size: 11px;
+        }
+
+        .icons span {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 1000px) {
+            .navbar {
+                flex-wrap: wrap;
+                height: auto;
+                padding: 15px;
+                gap: 18px;
+            }
+
+            .menu {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .menu a {
+                padding: 5px 0;
+            }
+
+            .search {
+                width: 250px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .menu {
+                gap: 12px;
+            }
+
+            .menu a {
+                font-size: 11px;
+            }
+
+            .search {
+                width: 100%;
+            }
+
+            .icons {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">M</div>
+
+        <nav class="menu">
+            <a href="#">MEN</a>
+            <a href="#">WOMEN</a>
+            <a href="#">KIDS</a>
+            <a href="#">HOME</a>
+            <a href="#">BEAUTY</a>
+            <a href="#">GENZ</a>
+            <a href="#" class="studio">
+                STUDIO <sup class="new">NEW</sup>
+            </a>
+        </nav>
+
+        <div class="search">
+            <span>🔍</span>
+            <input type="text"
+                   placeholder="Search for products, brands and more">
+        </div>
+
+        <div class="icons">
+            <a href="#">
+                <span>♙</span>
+                Profile
+            </a>
+
+            <a href="#">
+                <span>♡</span>
+                Wishlist
+            </a>
+
+            <a href="#">
+                <span>🛍</span>
+                Bag
+            </a>
+        </div>
+
+    </header>
+
+</body>
+</html>
